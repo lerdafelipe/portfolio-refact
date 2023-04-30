@@ -31,6 +31,8 @@ body.dark {
   --outer-shadow-0: 0 0 0 #222327, 0 0 0 #363636;
   --inner-shadow: inset 3px 3px 3px #222327, -3px -3px 3px #363636;
   --inner-shadow-0: inset 0px 0px 0px #222327, 0px 0px 0px #363636;
+  --skin-color:#2eb1ed;
+  --skin-color-80: rgba(44, 176, 237, 0.80);
 }
 
 /*General*/

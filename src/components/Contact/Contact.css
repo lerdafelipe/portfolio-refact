@@ -1,0 +1,42 @@
+.contact-section {
+  padding: 80px 0 80px;
+  min-height: 100vh;
+}
+
+
+
+
+
+/** CONTACT ITEM **/
+.contact-section .contact-item {
+  flex: 0 0 calc(33.33% - 30px);
+  max-width: calc(33.33% - 30px);
+  padding: 15px;
+  display: flex;
+}
+.contact-section .contact-item-inner {
+  padding: 30px 15px;
+  text-align: center;
+  border-radius: 5px;
+  width: 100%;
+}
+.contact-section .contact-item-inner svg {
+  font-size: 25px;
+  color: var(--skin-color);
+}
+.contact-section .contact-item-inner span {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-black-700);
+  margin: 15px 0 10px;
+  text-transform: capitalize;
+}
+.contact-section .contact-item-inner p {
+  font-size: 16px;
+  color: var(--text-black-600);
+  line-height: 26px;
+  margin: 0;
+  word-break: break-word;
+}
+

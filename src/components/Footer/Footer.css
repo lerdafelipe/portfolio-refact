@@ -1,0 +1,18 @@
+
+.foot div{
+  margin-bottom: 20px; 
+  display: flex; 
+  justify-content: space-around;
+}
+.foot div span:last-child a{
+  color: var(--text-black-900); 
+  text-decoration: underline;
+}
+.foot div span:first-child{
+  margin: 0 10px; 
+  padding: 0; 
+  color: var(--text-black-900);
+}
+.section-subtitle-p{
+  color: var(--text-black-600);
+}

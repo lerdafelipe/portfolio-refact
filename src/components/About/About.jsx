@@ -1,6 +1,7 @@
+/* eslint-disable react/prop-types */
 import './About.css'
 import img from '../../assets/profile-pic.png'
-import { FbIcon, GithubIcon, LinkedinIcon, MailIcon, PhoneIcon, WppIcon } from '../../Icons/Icons'
+import { GithubIcon, IgIcon, LinkedinIcon, MailIcon, PhoneIcon, WppIcon } from '../../Icons/Icons'
 
 const About = () => {
   return (
@@ -20,12 +21,18 @@ const About = () => {
               <img className="outer-shadow" src={img} alt="foto-felipe"/>
             </div>
             <div className="social-links">
-              <a rel='noreferrer' target="_BLANK" href="mailto:lerdafelipe@gmail.com" className="outer-shadow hover-in-shadow"><MailIcon /></a>
-              <a rel='noreferrer' target="_BLANK" href="tel:+5493534279005" className="outer-shadow hover-in-shadow"><PhoneIcon /></a>
-              <a rel='noreferrer' target="_BLANK" href="https://www.instagram.com/lerdafelipe/" className="outer-shadow hover-in-shadow"><FbIcon /></a>
-              <a rel='noreferrer' target="_BLANK" href="https://api.whatsapp.com/send?phone=+5493534279005" className="outer-shadow hover-in-shadow"><WppIcon /></a>
-              <a rel='noreferrer' target="_BLANK" href="https://www.linkedin.com/in/lerdafelipe/" className="outer-shadow hover-in-shadow"><LinkedinIcon /></a>
-              <a rel='noreferrer' target="_BLANK" href="https://github.com/lerdafelipe" className="outer-shadow hover-in-shadow"><GithubIcon /></a>
+              <SocialItem Icon={MailIcon} href={'mailto:lerdafelipe@gmail.com'} />
+
+              <SocialItem Icon={PhoneIcon} href={'tel:+5493534279005'} />
+              
+              <SocialItem Icon={IgIcon} href={'https://www.instagram.com/lerdafelipe/'} />
+
+              <SocialItem Icon={WppIcon} href={'https://api.whatsapp.com/send?phone=+5493534279005'} />
+
+              <SocialItem Icon={LinkedinIcon} href={'https://www.linkedin.com/in/lerdafelipe/'} />
+
+              <SocialItem Icon={GithubIcon} href={'https://github.com/lerdafelipe'} />
+              
             </div>
           </div>
           <div className="sobre-info">
@@ -44,20 +51,23 @@ const About = () => {
               <p className="section-subtitle-p" id="skills-subTitle">Existen más herramientas que utilizo, estás son las más comunes.</p>
             </div>
             <div className="skills-cont">
-              <span className="tab-item outer-shadow">HTML</span>
-              <span className="tab-item outer-shadow">CSS</span>
-              <span className="tab-item outer-shadow">Javascript</span>
-              <span className="tab-item outer-shadow">SCSS</span>
-              <span className="tab-item outer-shadow">Jquery</span>
-              <span className="tab-item outer-shadow">Wordpress</span>
-              <span className="tab-item outer-shadow">Next.js</span>
-              <span className="tab-item outer-shadow">React.js</span>
-              <span className="tab-item outer-shadow">Node.js</span>
-              <span className="tab-item outer-shadow">Express.js</span>
-              <span className="tab-item outer-shadow">Firebase</span>
-              <span className="tab-item outer-shadow">SQL</span>
-              <span className="tab-item outer-shadow">NoSQL</span>
-              <span className="tab-item outer-shadow">Figma</span>
+              <SkillItem skill={'HTML'} />
+              <SkillItem skill={'CSS'} />
+              <SkillItem skill={'Javascript'} />
+              <SkillItem skill={'Typescript'} />
+              <SkillItem skill={'Jquery'} />
+              <SkillItem skill={'Wordpress'} />
+              <SkillItem skill={'Next.js'} />
+              <SkillItem skill={'React.js'} />
+              <SkillItem skill={'Vite.js'} />
+              <SkillItem skill={'Redux.js'} />
+              <SkillItem skill={'Node.js'} />
+              <SkillItem skill={'SQL'} />
+              <SkillItem skill={'NoSQL'} />
+              <SkillItem skill={'Firebase'} />
+              <SkillItem skill={'Git/Github'} />
+              <SkillItem skill={'React hooks'} />
+              <SkillItem skill={'Vitest / Playwright'} />
             </div>
           </div>
         </div>
@@ -68,3 +78,17 @@ const About = () => {
 }
 
 export default About
+
+const SkillItem = ({skill}) => {
+  return (
+    <span className="tab-item outer-shadow">{skill}</span>
+  )
+}
+
+const SocialItem = ({Icon, href}) => {
+  return (
+    <a rel='noreferrer' target="_BLANK" href={href} className="outer-shadow hover-in-shadow">
+      {Icon && <Icon />}
+    </a>
+  )
+}

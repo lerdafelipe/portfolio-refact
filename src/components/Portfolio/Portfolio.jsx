@@ -1,3 +1,6 @@
+import PortfolioCard from "../PortfolioCard/PortfolioCard"
+import './Portfolio.css'
+
 const Portfolio = () => {
   return (
     <section className="portfolio-section section active" id="portfolio">
@@ -9,6 +12,9 @@ const Portfolio = () => {
 				</div>
 			</div>
 			<div className="row portfolio-items">
+
+        <PortfolioCard />
+        <PortfolioCard />
 
       </div>
 
