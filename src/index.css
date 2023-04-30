@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap");
+/*variables css*/
+:root {
+  --bg-black: #ffffff;
+  --bg-black-900: #000000;
+  --bg-black-100: #dddddd;
+  --bg-black-50: #F4F4F4;
+  --bg-opacity: rgba(255, 255, 255, 0.5);
+  --text-black-900: #000000;
+  --text-black-700: #555555;
+  --text-black-600: #666666;
+  --text-black-300: #bbbbbb;
+  --outer-shadow: 3px 3px 3px #d0d0d0, -3px -3px 3px #f8f8f8;
+  --outer-shadow-0: 0 0 0 #d0d0d0, 0 0 0 #f8f8f8;
+  --inner-shadow: inset 3px 3px 3px #d0d0d0, -3px -3px 3px #f8f8f8;
+  --inner-shadow-0: inset 0px 0px 0px #d0d0d0, 0px 0px 0px #f8f8f8;
+  --skin-color:#2eb1ed;
+  --skin-color-80: rgba(44, 176, 237, 0.80);
+}
+/*variables css modo dark*/
+body.dark {
+  --bg-black: #000000;
+  --bg-black-900: #ffffff;
+  --bg-black-100: #353535;
+  --bg-black-50: #2b2c2f;
+  --bg-opacity: rgba(43, 44, 47, 0.5);
+  --text-black-900: #ffffff;
+  --text-black-700: #ffffff;
+  --text-black-600: #bbbbbb;
+  --outer-shadow: 3px 3px 3px #222327, -3px -3px 3px #363636;
+  --outer-shadow-0: 0 0 0 #222327, 0 0 0 #363636;
+  --inner-shadow: inset 3px 3px 3px #222327, -3px -3px 3px #363636;
+  --inner-shadow-0: inset 0px 0px 0px #222327, 0px 0px 0px #363636;
+}
+
+/*General*/
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  overflow-x: hidden;
+  background-color: var(--bg-black-50);
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  background-color: #2b2c2f;
+}
+
+
+/*Globals*/
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+img {
+  vertical-align: middle;
+  max-width: 100%;
+}
+.container {
+  max-width: 1140px;
+  margin: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.justify-content-between {
+  justify-content: space-between;
+}
+.align-items-center {
+  align-items: center;
+}
+.outer-shadow {
+  box-shadow: var(--outer-shadow);
+}
+.inner-shadow {
+  box-shadow: var(--inner-shadow);
+}
+.hover-in-shadow {
+  position: relative;
+  z-index: 1;
+}
+.hover-in-shadow:hover {
+  box-shadow: var(--outer-shadow-0);
+}
+.hover-in-shadow:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease;
+  z-index: -1;
+}
+.hover-in-shadow:hover:after {
+  box-shadow: var(--inner-shadow);
+}
+.btn-1 {
+  padding: 10px 25px;
+  border-radius: 30px;
+  color: var(--skin-color);
+  font-size: 18px;
+  font-weight: 500;
+  background-color: transparent;
+  line-height: 1.5;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-block;
+  top: 5px;
+  border: none;
+}
+.btn-1:after {
+  border-radius: 30px;
+}
+.section-title {
+  padding: 0 15px;
+  flex: 0 0 100%;
+  max-width: 100%;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.section-title h2 {
+  display: inline-block;
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--text-black-900);
+  text-transform: uppercase;
+  margin: 0;
+}
+.section-title h2:before {
+  content: attr(value);
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--skin-color);
+}
+.section.hide {
+  display: none;
+}
+
+.fade-out-effect {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: var(--bg-black-50);
+  visibility: hidden;
+}
+.fade-out-effect.active {
+  visibility: visible;
+  z-index: 1000;
+  animation: fadeOut 0.3s ease-out;
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
