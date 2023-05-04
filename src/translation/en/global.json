@@ -1,0 +1,23 @@
+{
+  "homeText": "My name is Felipe Lerda, a 21-year-old front-end developer. I am <img class='flag' src='https://images.emojiterra.com/google/noto-emoji/v2.034/128px/1f1ee-1f1f9.png'/>Italian-Argentinian<img class='flag' src='https://images.emojiterra.com/google/noto-emoji/v2.034/128px/1f1e6-1f1f7.png'/> I started my IT journey in 2016 with a Wordpress course and decided to pursue web development full-time in 2020. I completed a full-stack web development course at CoderHouse and am now seeking opportunities to grow and contribute as a professional.",
+  "homeSecondText": "I love to learn and collaborate, constantly seeking new ways to expand my knowledge and unleash my creativity. I am confident that my technical skills and passion for development make me a valuable asset to any team. ",
+  "skillsData": "Some tools",
+  "skillsSubtitle": "I usually work with the React stack, but i'm open to others technologies.",
+  "portfolioTitle": "Some projects",
+  "portfolioSubtitle": "* Click on the image and go to the project",
+  "contactData": "Contact me",
+  "contactTitle": "Keep in touch",
+  "phoneTitle": "Phone",
+  "loactionTitle": "Location",
+  "polits": "Privacy politicy",
+  "styleTitle": "Style switcher",
+  "LangTitle": "Language",
+  "VisitTitle": "Visitor Type",
+  "firtVisitor": "I'm a Recruiter",
+  "secondVisitor": "A person who is visiting the website",
+  "popupTitle": "What type of visitor are you?",
+  "firstProject": "This is a website for a company with functionalities to automate company processes. <span>Tools:</span> Firestore, React.js",
+  "secondProject": "This was an own startup, basically an ecommerce of supermarket items. Currently not available. <span>Tools:</span> Wordpress.",
+  "thirdProject": "These are mini project HTML/CSS/JS vanilla. <span>Tools:</span> mostly HTML, CSS, Javascript",
+  "fourthProject": "These are projects developed with me with React.js <span>Tools:</span> React.js, Redux, Node.js and other libraries."
+}

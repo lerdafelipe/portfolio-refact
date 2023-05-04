@@ -1,9 +1,12 @@
 /* eslint-disable react/prop-types */
 import './About.css'
 import img from '../../assets/profile-pic.png'
+import { useTranslation } from 'react-i18next'
 import { GithubIcon, IgIcon, LinkedinIcon, MailIcon, PhoneIcon, WppIcon } from '../../Icons/Icons'
 
 const About = () => {
+  const [t] = useTranslation('global')
+
   return (
     <>
     <section className="sobre-section section active" id="about">
@@ -39,16 +42,15 @@ const About = () => {
             <div className="section-title">
               <h2 value="Web developer">Felipe Lerda</h2>
             </div>
-            <p id="home-text"><span>¡Hola! Mi nombre es Felipe Lerda. Soy Desarrollador Web.</span> Tengo 19 años, En 2019, mientras estaba en mi último año del secundario, realicé un curso de <span>EducacionIT</span> y desde ese momento incursiono en el mundo del diseño y desarrollo web. Luego de hacer algunos sitios web, en 2020 decidí meterme de lleno en esta profesión y es por eso que comencé una carrera en <span>Coderhouse</span>.
-            Soy la persona indicada para hacer tu sitio web, ya que además de ser alguien que pone mucho esfuerzo en lo que hace, tomo cada proyecto como propio y busco mejoras constantes para que tu idea sea lo más profesional posible.</p>
-            <p id="home-secondText">Mi consejo es que te apresures a contactarme para poder confirmar tu sitio web, ya que tengo un límite de proyectos al mes.</p>
+            <p id="home-text">{t('homeText')}</p>
+            <p id="home-secondText">{t('homeSecondText')}</p>
           </div>
         </div>
         <div className="row">
           <div className="sobre-pestañas">
             <div className="section-title">
-              <h2 id="skills-data" value="Algunas herramientas">Skills</h2>
-              <p className="section-subtitle-p" id="skills-subTitle">Existen más herramientas que utilizo, estás son las más comunes.</p>
+              <h2 id="skills-data" value={t('skillsData')}>Skills</h2>
+              <p className="section-subtitle-p" id="skills-subTitle">{t('skillsSubtitle')}</p>
             </div>
             <div className="skills-cont">
               <SkillItem skill={'HTML'} />
