@@ -15,9 +15,12 @@
   "VisitTitle": "Visitor Type",
   "firtVisitor": "I'm a Recruiter",
   "secondVisitor": "A person who is visiting the website",
-  "popupTitle": "What type of visitor are you?",
+  "titleFirstProject": "Lumadi maderas",
   "firstProject": "This is a website for a company with functionalities to automate company processes. <span>Tools:</span> Firestore, React.js",
+  "titleSecondProject": "Poselar",
   "secondProject": "This was an own startup, basically an ecommerce of supermarket items. Currently not available. <span>Tools:</span> Wordpress.",
+  "titleThirdProject": "Projects Javascript Vanilla",
   "thirdProject": "These are mini project HTML/CSS/JS vanilla. <span>Tools:</span> mostly HTML, CSS, Javascript",
+  "titleFourthProject": "Projects React",
   "fourthProject": "These are projects developed with me with React.js <span>Tools:</span> React.js, Redux, Node.js and other libraries."
 }

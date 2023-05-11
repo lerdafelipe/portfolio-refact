@@ -16,8 +16,12 @@
   "firtVisitor": "Sono una persona delle risorse umane",
   "secondVisitor": "Una persona che visita il sito web",
   "popupTitle": "Che tipo di utente sei?",
-  "firstProject": "Si tratta di un sito web di esempio con funzionalità per automatizzare i lavori dell'azienda. <span>Strumenti:</span> Firestore, React.js",
-  "secondProject": "Questo è stato un mio progetto imprenditoriale, era un e-commerce con articoli di supermercato. Non disponibile. <span>Strumenti:</span> Wordpress.",
-  "thirdProject": "Progetti realizzati con HTML/CSS/Js vanilla. <span>Strumenti:</span> principalmente realizzati con HTML, CSS, Javascript.",
-  "fourthProject": "Progetti sviluppati da me con React.js. <span>Strumenti:</span> React.js, Redux, Node.js e altre librerie Javascript."
+  "titleFirstProject": "Lumadi maderas",
+  "firstProject": "Si tratta di un sito web di esempio con funzionalità per automatizzare i lavori dell'azienda. Strumenti: Firestore, React.js",
+  "titleSecondProject": "Poselar",
+  "secondProject": "Questo è stato un mio progetto imprenditoriale, era un e-commerce con articoli di supermercato. Non disponibile. Strumenti: Wordpress.",
+  "titleThirdProject": "Progetti Javascript Vanilla",
+  "thirdProject": "Progetti realizzati con HTML/CSS/Js vanilla. Strumenti: principalmente realizzati con HTML, CSS, Javascript.",
+  "titleFourthProject": "Progetti React",
+  "fourthProject": "Progetti sviluppati da me con React.js. Strumenti: React.js, Redux, Node.js e altre librerie Javascript."
 }
