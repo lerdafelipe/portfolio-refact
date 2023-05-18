@@ -35,6 +35,31 @@
   --skin-color-80: rgba(44, 176, 237, 0.80);
 }
 
+[data-color='blue'] {
+  --skin-color:#2eb1ed;
+  --skin-color-80: rgba(44, 176, 237, 0.80);
+}
+
+[data-color='orange'] {
+  --skin-color:#ec9412;
+	--skin-color-80: rgba(237, 149, 18, 0.80);
+}
+
+[data-color='green'] {
+  --skin-color:#1fc586;
+	--skin-color-80: rgba(31, 199, 134, 0.80);
+}
+
+[data-color='pink'] {
+  --skin-color:#fb839e;
+	--skin-color-80: rgba(251, 131, 157, 0.80);
+}
+
+[data-color='red'] {
+  --skin-color:#cc3a3b;
+	--skin-color-80: rgba(204, 56, 56, 0.80);
+}
+
 /*General*/
 body {
   font-family: 'Poppins', sans-serif;

@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next'
 
 const ColorSwitcher = () => {
 	const [open, setOpen] = useState(false)
-	const {handleTheme, theme} = useTheme()
+	const {handleTheme, handleMainColor, theme} = useTheme()
 	const { t, i18n } = useTranslation('global')
 	const [currentLanguage, setCurrentLanguage] = useState(i18n.language)
 
@@ -36,11 +36,11 @@ const ColorSwitcher = () => {
 			<h4 id="styleTitle" style={{marginTop: 0}}>{t('styleTitle')}</h4>
 
 			<div className="colors">
-				<span className="color-1" onClick={()=> {}}></span>
-				<span className="color-2" onClick={()=> {}}></span>
-				<span className="color-3" onClick={()=> {}}></span>
-				<span className="color-4" onClick={()=> {}}></span>
-				<span className="color-5" onClick={()=> {}}></span>
+				<span className="color-1" onClick={()=> {handleMainColor(1)}}></span>
+				<span className="color-2" onClick={()=> {handleMainColor(2)}}></span>
+				<span className="color-3" onClick={()=> {handleMainColor(3)}}></span>
+				<span className="color-4" onClick={()=> {handleMainColor(4)}}></span>
+				<span className="color-5" onClick={()=> {handleMainColor(5)}}></span>
 			</div>
 
 			<h4 id="lang-title">{t('LangTitle')}</h4>

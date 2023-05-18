@@ -6,11 +6,6 @@
 
 - Organizar algunos proyectos.
 
-- Tema de aplicación.
-
-  - Primary color
-  - Dark/ligth theme.
-
 - Organizar el onLoad.
 
 - Politicas de privacidad.

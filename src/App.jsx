@@ -7,10 +7,10 @@ import Header from './components/Header/Header'
 import Preloader from './components/Preloader/Preloader'
 
 function App() {
-  const {theme} = useTheme()
+  const {theme, primaryColor} = useTheme()
   return (
     <>
-      <main data-theme={theme}>
+      <main data-theme={theme} data-color={primaryColor} >
         <Header />
 
 

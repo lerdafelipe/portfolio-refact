@@ -2,11 +2,11 @@ import { createContext, useContext, useState } from 'react'
 
 const ThemeContext = createContext()
 
-//const colors = []
+const colors = ['blue', 'orange', 'green', 'pink', 'red']
 
 export const ThemeProvider = ({ children }) => {
   const [theme, setTheme] = useState('dark')
-  //const [mainColor, setMainColor] = useState(1)
+  const [mainColor, setMainColor] = useState(1)
 
   const handleTheme = () => {
     theme === 'dark' 
@@ -14,8 +14,10 @@ export const ThemeProvider = ({ children }) => {
       : setTheme('dark') 
   }
 
-  const actions = {handleTheme}
-  const state = {theme}
+  const handleMainColor = ( num ) => setMainColor(num)
+ 
+  const actions = { handleTheme, handleMainColor }
+  const state = { theme, primaryColor: colors[mainColor-1] }
 
   return <ThemeContext.Provider value={{actions, state}}>
     {children}
@@ -24,9 +26,9 @@ export const ThemeProvider = ({ children }) => {
 
 export const useTheme = () => {
   const { 
-    actions: { handleTheme },
-    state: { theme }
+    actions: { handleTheme, handleMainColor },
+    state: { theme, primaryColor }
    } = useContext(ThemeContext)
 
-   return { handleTheme, theme }
+   return { handleTheme, theme, primaryColor, handleMainColor }
 }
