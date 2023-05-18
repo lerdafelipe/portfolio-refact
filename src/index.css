@@ -18,7 +18,7 @@
   --skin-color-80: rgba(44, 176, 237, 0.80);
 }
 /*variables css modo dark*/
-body.dark {
+[data-theme='dark'] {
   --bg-black: #000000;
   --bg-black-900: #ffffff;
   --bg-black-100: #353535;
@@ -41,13 +41,15 @@ body {
   font-size: 16px;
   line-height: 1.5;
   overflow-x: hidden;
-  background-color: var(--bg-black-50);
   padding: 0;
   margin: 0;
   border: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  background-color: #2b2c2f;
+}
+
+main{
+  background-color: var(--bg-black-50);
 }
 
 

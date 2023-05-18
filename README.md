@@ -1,12 +1,15 @@
 # Falta:
 
-- Página dinámica de proyecto.
+- Página dinámica de proyecto. Link al proyecto si existe. Link al código si existe.
 
 - Agregar proyecto Fluspace / Rifamia / Clasifix.
 
 - Organizar algunos proyectos.
 
 - Tema de aplicación.
+
+  - Primary color
+  - Dark/ligth theme.
 
 - Organizar el onLoad.
 
@@ -18,7 +21,9 @@
 
 -Blog.
 
-- Deployar proyectos en Github pages
+- Deployar proyectos en Github pages.
+
+  - Dominio lerdafelipe.com
 
 - Agregar página de challenges.
   - Dar README para que los hacer.

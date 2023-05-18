@@ -1,12 +1,16 @@
 import { useState } from 'react'
-import { SettingIcon, SunIcon, UserIcon } from '../../Icons/Icons'
+import { MoonIcon, SettingIcon, SunIcon, UserIcon } from '../../Icons/Icons'
 import './ColorSwitcher.css'
+import {useTheme} from '../../Context/ThemeContext'
 import { useTranslation } from 'react-i18next'
 
 const ColorSwitcher = () => {
 	const [open, setOpen] = useState(false)
+	const {handleTheme, theme} = useTheme()
 	const { t, i18n } = useTranslation('global')
 	const [currentLanguage, setCurrentLanguage] = useState(i18n.language)
+
+	const darkTheme = theme === 'dark'
 
 	const changeLanguage = (e) => {
 		const lng = e.target.id
@@ -25,8 +29,8 @@ const ColorSwitcher = () => {
 				<SettingIcon  className='fa-spin'/>
 			</div>
 
-			<div className="day-night s-icon outer-shadow hover-in-shadow">
-				<SunIcon />
+			<div onClick={handleTheme} className="day-night s-icon outer-shadow hover-in-shadow">
+				{darkTheme? <SunIcon /> : <MoonIcon />}
 			</div>
 
 			<h4 id="styleTitle" style={{marginTop: 0}}>{t('styleTitle')}</h4>
